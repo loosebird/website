@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loosebird - FAQ</title>
+
+    <meta name="description" content="Frequently Asked Questions - Loosebird" />
+    <meta property="og:title" content="Loosebird - FAQ" />
+    <meta property="og:description" content="Frequently Asked Questions - Loosebird" />
+    <meta property="og:type" content="website" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body id="top" class="text-justify">
+    <header>
+      <h1>Loosebird</h1>
+      <p class="author">Frequently Asked Questions</p>
+      <div class="header-links">
+        <a href="../../index.html" rel="nooper noreferrer">Home</a>
+        <a href="./faq.html" rel="nooper noreferrer">FAQ</a>
+        <a href="./projects.html" rel="nooper noreferrer">Projects</a>
+        <a href="./news.html" rel="nooper noreferrer">News</a>
+        <a href="./community.html" rel="nooper noreferrer">Community</a>
+        <a href="./donate.html" rel="nooper noreferrer">Donate</a>
+      </div>
+    </header>
+
+    <main>
+      <article class="indent-pars">
+        <h2 id="about-the-project">About the Project</h2>
+
+        <h3 id="why-the-name-loosebird">Why the name Loosebird?</h3>
+        <p>
+          <em>Vogel im Käfig</em> is a German metaphor that means "bird in a cage." It represents
+          someone who has the potential to be free but is trapped by external or internal
+          circumstances. Billions of users today are metaphorically "locked" into proprietary
+          software, web-based applications, closed systems, and restrictive architectures — like
+          birds in a cage.
+        </p>
+        <p>
+          The name <strong>Loosebird</strong> embodies our mission: to set those birds free. We
+          provide open-source, native, and universal alternatives that give users back control over
+          their own digital lives.
+        </p>
+
+        <h3 id="why-bird-names">Why are all your applications named after birds?</h3>
+        <p>Because it’s fun. Birds evoke freedom, lightness, and speed.</p>
+
+        <h3 id="what-does-native-software-mean">
+          What does "native software" actually mean, and why does it matter?
+        </h3>
+        <p>
+          Native software is built specifically for a given operating system using its recommended
+          toolkits and APIs (e.g., GTK, Qt, WinUI, SwiftUI). It does <strong>not</strong> rely on
+          web technologies wrapped in a browser shell (like Electron).
+        </p>
+        <p class="no-indent">Why it matters:</p>
+        <ul>
+          <li><strong>Performance:</strong> Lower memory and CPU usage, faster startup times.</li>
+          <li>
+            <strong>Integration:</strong> Feels like a natural part of the system, respecting
+            dark/light modes, accessibility features, and familiar shortcuts.
+          </li>
+          <li>
+            <strong>Sustainability:</strong> Extends hardware lifespan by not wasting resources.
+          </li>
+          <li>
+            <strong>Offline-first mindset:</strong> Native applications do not assume the cloud is
+            always available.
+          </li>
+        </ul>
+        <p class="no-indent">
+          We believe that giving you a fast, focused tool is a form of respect.
+        </p>
+
+        <h3 id="why-give-everything-for-free">Why do you give everything away for free?</h3>
+        <p>We distinguish between two concepts of "free":</p>
+        <ul>
+          <li>
+            <strong>Free as in freedom</strong> — you can use, study, modify, and share our
+            software.
+          </li>
+          <li>
+            <strong>Free as in community-supported</strong> — the zero price tag is made possible by
+            people who believe in the mission.
+          </li>
+        </ul>
+        <p class="no-indent">
+          Our work is sustained by donations and volunteer contributions. We want high-quality tools
+          to be a right, not a luxury gated by subscriptions.
+        </p>
+
+        <h3 id="political-neutrality">Do you take political stances or engage in social issues?</h3>
+        <p>
+          Loosebird is a software organization. Our only mission is building native, open‑source
+          tools that respect user freedom. We do not involve ourselves in wars, political movements,
+          activism, or any agenda outside the scope of software development.
+        </p>
+        <p>
+          This is not indifference — it is a deliberate choice of focus. We believe that only a
+          strictly neutral, centered approach can create a safe, inclusive space where anyone,
+          regardless of background, can collaborate on code without distraction. We leave external
+          battles to others. Our fight is for software sovereignty, not for ideological territory.
+        </p>
+        <p>
+          <strong>All our software is neutral and centered by design.</strong> The tools do not push
+          views, promote causes, or embed opinions. They do one job, and they do it cleanly.
+        </p>
+
+        <h2 id="technology-and-stack">Technology & Stack</h2>
+
+        <h3 id="what-is-your-tech-stack">What is your tech stack and why did you choose it?</h3>
+        <p>We use a custom stack designed for clarity, performance, and native output:</p>
+        <ul>
+          <li>
+            <strong><a href="https://slint.dev">Slint</a></strong> – a modern, declarative language
+            for building native user interfaces. It is fast, professional, and compiles to efficient
+            machine code.
+          </li>
+          <li>
+            <strong><a href="https://python.org">Python</a></strong> – handles all business logic.
+            Python offers deep operating-system access, a massive ecosystem, and a gentle learning
+            curve for contributors.
+          </li>
+          <li>
+            <strong><a href="https://nuitka.net">Nuitka</a></strong> – an optimizing Python compiler
+            that translates our code into standalone native executables. No interpreter required on
+            the user's machine.
+          </li>
+        </ul>
+        <p class="no-indent">
+          This combination lets us ship polished, self-contained applications that are as close to
+          the metal as possible while remaining maintainable and welcoming to new developers.
+        </p>
+
+        <h3 id="why-not-rust-go">Why not Rust, Go, etc...?</h3>
+        <p>
+          We love all those languages and use them where appropriate. However, Python + Nuitka gives
+          us a unique advantage: rapid development without sacrificing the final user experience.
+          Because Nuitka compiles to machine code, the user does not need Python installed and
+          enjoys performance comparable to natively compiled programs.
+        </p>
+        <p>
+          That said, we are pragmatic. If a particular component demands it, we will use the right
+          tool for the job.
+        </p>
+
+        <h3 id="versioning">How do you version your software?</h3>
+        <p>
+          We follow
+          <strong><a href="https://romversioning.github.io/romver/">RomVer</a></strong> (Romantic
+          Versioning), interpreted through our own strict scheme: <code>project.major.minor</code>.
+        </p>
+        <p>
+          <strong>project</strong> increments only when the entire application is rewritten from the
+          ground up. This is a rare, monumental event.<br />
+          <strong>major</strong> increments for any backward‑incompatible change — features removed,
+          APIs renamed, or behavior that breaks existing usage.<br />
+          <strong>minor</strong> increments for everything else: new functionality, optimizations,
+          bug fixes, documentation updates. Do not be alarmed if minor numbers climb high; that is
+          simply honest accounting of continuous improvement.
+        </p>
+        <p>
+          This scheme communicates the real nature of a release and aligns with our core promises of
+          stability and transparency.
+        </p>
+
+        <h2 id="privacy-and-telemetry">Privacy & Telemetry</h2>
+
+        <h3 id="do-you-collect-telemetry">Do you collect any telemetry?</h3>
+        <p>
+          We are completely against traditional telemetry that runs by default and harvests
+          identifiable data.
+          <strong>Our software never phones home without your explicit consent.</strong>
+        </p>
+        <p>
+          We are, however, open to the idea of <strong>anonymous, opt-in telemetry</strong> — where
+          you voluntarily choose to share minimal, aggregated data solely for the purpose of making
+          the programs you love even better. If such a system is ever introduced, it will be:
+        </p>
+        <ul>
+          <li>Fully transparent (source code visible).</li>
+          <li>Strictly opt-in (disabled by default).</li>
+          <li>Documented in plain language about what is collected and why.</li>
+        </ul>
+        <p class="no-indent">If you don't opt in, no data will ever leave your machine.</p>
+
+        <h3 id="does-software-require-internet">
+          Does the software require an internet connection?
+        </h3>
+        <p>
+          No. Every core feature works perfectly offline. We believe you should not need an account
+          or a constant connection to use a calculator, a text editor, or a file manager. The cloud
+          is an optional companion, never a prison.
+        </p>
+
+        <h2 id="contributing-and-support">Contributing & Support</h2>
+
+        <h3 id="how-can-i-contribute">How can I contribute?</h3>
+        <p>Thank you for asking! There are many ways to help:</p>
+        <ol>
+          <li>
+            <strong>Code:</strong> Check our repositories for issues tagged
+            <code>good first issue</code> or <code>help wanted</code>.
+          </li>
+          <li>
+            <strong>Documentation:</strong> Improve the docs, write tutorials, or suggest clearer
+            explanations.
+          </li>
+          <li>
+            <strong>Translations:</strong> Help make our software and documentation speak your
+            language. Every new locale opens the door for more people to participate.
+          </li>
+          <li>
+            <strong>Design & UX:</strong> Share your ideas for making our interfaces more intuitive.
+          </li>
+          <li>
+            <strong>Community:</strong> Answer questions on our discussion forums or help triage bug
+            reports.
+          </li>
+          <li>
+            <strong>Donations:</strong> Support our developers financially so they can dedicate more
+            time to the projects.
+          </li>
+        </ol>
+        <p class="no-indent">
+          Visit our <a href="CONTRIBUTING_LINK">CONTRIBUTING.md</a> for detailed guidelines.
+        </p>
+
+        <h3 id="how-are-donations-used">How are donations used?</h3>
+        <p>Every donation directly supports the people writing the code. Funds go toward:</p>
+        <ul>
+          <li>Compensating developers for dedicated development sprints.</li>
+          <li>
+            Covering infrastructure costs (domains, build servers, code signing certificates).
+          </li>
+          <li>
+            Occasionally, acquiring test hardware to ensure native compatibility across platforms.
+          </li>
+        </ul>
+        <p class="no-indent">
+          No one is getting rich here — we are all birds flying together. Transparency is a core
+          value, so we publish financial summaries periodically.
+        </p>
+
+        <h3 id="commercial-product">Can I use Loosebird software in a commercial product?</h3>
+        <p>
+          Yes, depending on the license of the specific project. Most of our software is released
+          under permissive licenses (MIT, Apache 2.0) or copyleft licenses (GPL). This means you can
+          integrate it into commercial work as long as you respect the terms. Check the
+          <code>LICENSE</code> file in each repository for exact details. If in doubt, open an issue
+          and ask.
+        </p>
+
+        <h3 id="operating-systems">What operating systems and architectures do you support?</h3>
+        <p>We aim for <strong>universal native</strong> support. Our primary targets are:</p>
+        <ul>
+          <li><strong>Linux</strong></li>
+          <li><strong>macOS</strong></li>
+          <li><strong>Windows</strong></li>
+        </ul>
+        <p class="no-indent">
+          On all these platforms we build for both <strong>x86-64</strong> and
+          <strong>arm64</strong> architectures.
+        </p>
+        <p class="no-indent">
+          Because we use Nuitka and Slint, we can compile native executables for every target from
+          the same codebase. Whether you are on a modern ARM single‑board computer, an Apple Silicon
+          Mac, or a classic x86 workstation, the software meets you there — no translation layers,
+          no compromises.
+        </p>
+        <p class="no-indent">
+          If you can help us test on a less common OS or architecture, we would love your help!
+        </p>
+
+        <h3 id="found-a-bug">I found a bug or have a feature request. What should I do?</h3>
+        <p>
+          Open an issue on the relevant repository. Be as specific as possible: steps to reproduce,
+          expected vs. actual behavior, and your system information. We take every report seriously
+          because our users are our only stakeholders.
+        </p>
+
+        <hr />
+
+        <p>
+          <em
+            >Didn't find your answer? Join our community forum or drop us a line. We're building
+            this together.</em
+          >
+        </p>
+      </article>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
